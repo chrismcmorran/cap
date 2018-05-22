@@ -11,7 +11,7 @@ int main()
   // calculate available space
   float total = buffer.f_blocks;
   float free = buffer.f_bfree;
-  float capacity = (free/total) * 100;
+  float capacity = 100 - ((free/total) * 100);
 
   
   printf("Capacity: %.2f%%\n", capacity);
